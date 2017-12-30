@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>New York Times Search</title>
+  </head>
+  <body>
+
+    <!-- Adding a jumbotron for the NYTimes Search Header -->
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">New York Times Search</h1>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Adding a form in order to collect user inputs -->
+  <div class="container">
+    <form>
+      <!-- Creating a input box for adding the search term -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Search Term</label>
+        <input type="search" class="form-control" id="seacrhTerm" placeholder="Basketball">
+      </div>
+
+      <!-- Creating a input box for number of records to return -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Number of Records to Retrieve</label>
+        <input class="form-control" id="retrievedRecords" placeholder="10">
+      </div>
+
+      <!-- Creating a input box for start year -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Start Year(Optional)</label>
+        <input class="form-control" id="startYear" placeholder="2016">
+      </div>
+
+      <!-- Creating a input box for end year -->
+      <div class="form-group">
+        <label for="exampleFormControlInput1">End Year(Optional)</label>
+        <input class="form-control" id="endYear" placeholder="2017">
+      </div>
+      <button type="submit" class="btn btn-primary">Search</button>
+      <button type="submit" class="btn btn-primary">Clear</button>
+    </form>
+  </div>
+
+<!-- Creating a div for the searched articles -->
+
+  <div class="container">
+    <div class="row searchResults">
+
+    </div>
+
+  </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script type="text/javascript" src="./javascript.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  </body>
+</html>
