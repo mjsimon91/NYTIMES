@@ -28,7 +28,7 @@
       <!-- Creating a input box for adding the search term -->
       <div class="form-group">
         <label for="exampleFormControlInput1">Search Term</label>
-        <input type="search" class="form-control" id="seacrhTerm" placeholder="Basketball">
+        <input type="search" class="form-control" id="searchTerm" placeholder="Basketball">
       </div>
 
       <!-- Creating a input box for number of records to return -->
@@ -48,15 +48,18 @@
         <label for="exampleFormControlInput1">End Year(Optional)</label>
         <input class="form-control" id="endYear" placeholder="2017">
       </div>
-      <button type="submit" class="btn btn-primary">Search</button>
-      <button type="submit" class="btn btn-primary">Clear</button>
+      <button type="submit" id="searchButton" class="btn btn-primary">Search</button>
+      <button type="submit" id="clearButton" class="btn btn-primary">Clear</button>
     </form>
   </div>
 
 <!-- Creating a div for the searched articles -->
 
   <div class="container">
-    <div class="row searchResults">
+    <div class="row ">
+      <div id="searchResults">
+
+      </div>
 
     </div>
 
