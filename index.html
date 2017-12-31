@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>New York Times Search</title>
   </head>
@@ -39,17 +40,61 @@
 
       <!-- Creating a input box for start year -->
       <div class="form-group">
-        <label for="exampleFormControlInput1">Start Year(Optional)</label>
-        <input class="form-control" id="startYear" placeholder="2016">
+        <label for="exampleFormControlInput1">Start Date (Optional)</label>
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" id="startYear" class="form-control" placeholder="YYYY">
+            </div>
+            <div class="col">
+              <input type="text" id="startMonth" class="form-control" placeholder="MM">
+            </div>
+            <div class="col">
+              <input type="text" id="startDay" class="form-control" placeholder="DD">
+            </div>
+          </div>
+        </form>
       </div>
+
+
 
       <!-- Creating a input box for end year -->
       <div class="form-group">
-        <label for="exampleFormControlInput1">End Year(Optional)</label>
-        <input class="form-control" id="endYear" placeholder="2017">
+        <label for="exampleFormControlInput1">End Date (Optional)</label>
+        <form>
+          <div class="row">
+            <div class="col">
+              <input type="text" id="endYear" class="form-control" placeholder="YYYY">
+            </div>
+            <div class="col">
+              <input type="text" id="endMonth" class="form-control" placeholder="MM">
+            </div>
+            <div class="col">
+              <input type="text" id="endDay" class="form-control" placeholder="DD">
+            </div>
+          </div>
+        </form>
       </div>
-      <button type="submit" id="searchButton" class="btn btn-primary">Search</button>
-      <button type="submit" id="clearButton" class="btn btn-primary">Clear</button>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-4 col-sm-4 searchNow">
+          <button type="submit" id="searchButton" class="btn btn-primary">Search</button>
+        </div>
+
+
+      <!-- Need to provide the New York Times attribution -->
+
+        <div class="col-lg-4 col-md-4 col-sm-4 nyTimesLogo">
+          <img src="./poweredby_nytimes_200a.png" alt="Powered by the New York Times">
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-4 clearNow">
+          <button type="submit" id="clearButton" class="btn btn-primary">Clear</button>
+        </div>
+
+      </div>
+
     </form>
   </div>
 

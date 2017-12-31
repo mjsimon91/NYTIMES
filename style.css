@@ -1,0 +1,25 @@
+.jumbotron {
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
+
+.nyTimesResult {
+  margin-top: 10px;
+}
+
+.btn {
+  margin-right: 20px;
+}
+
+.searchNow {
+  text-align: left;
+}
+
+.nyTimesLogo {
+  text-align: center;
+}
+
+.clearNow {
+  text-align: right;
+}
