@@ -33,23 +33,27 @@ function search(){
     method:"GET"
   }).done(function(response){
     for (var i = 0; i < response.response.docs.length; i++) {
-       nyTimesUrl = response.response.docs[i].web_url;
+       nyTimesUrl = '<a href="' + response.response.docs[i].web_url + '">';
        headline = response.response.docs[i].headline.main;
        articleSummary = response.response.docs[i].snippet;
        datePublished = response.response.docs[i].pub_date;
+
+       console.log(nyTimesUrl);
       // var articleImage = response.response.docs[i].multimedia[2].url
       articleResult =
-        '<div class="card nyTimesResult">' +
-          '<div class="card-header">' +
-            headline +
-          '</div>' +
-          '<div class="card-body">' +
-            '<blockquote class="blockquote mb-0">' +
-              '<p>' + articleSummary + '</p>' +
-              '<footer class="blockquote-footer">' + datePublished + '</footer>' +
-              '</blockquote>' +
+          '<div class="card nyTimesResult">' +
+            nyTimesUrl +
+            '<div class="card-header">' +
+              headline +
             '</div>' +
-          '</div>';
+            '<div class="card-body">' +
+              '<blockquote class="blockquote mb-0">' +
+                '<p>' + articleSummary + '</p>' +
+                '<footer class="blockquote-footer">' + datePublished + '</footer>' +
+                '</blockquote>' +
+              '</div>' +
+              '</a>'+
+            '</div>';
 
         $("#searchResults").append(articleResult);
     }
